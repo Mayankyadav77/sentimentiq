@@ -1,0 +1,59 @@
+# ── Python byte-compiled / optimised / DLL files ───────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ── Virtual environments ────────────────────────────────────────────────────
+.venv/
+env/
+venv/
+ENV/
+.env/
+
+# ── Test / build caches ─────────────────────────────────────────────────────
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Jupyter / IPython ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Model binaries — track only metadata JSON, not fitted .pkl binaries ─────
+# To deploy, users must run: python src/data_loader.py && python src/train.py
+*.pkl
+!models/model_metadata.json
+
+# ── Log files ───────────────────────────────────────────────────────────────
+*.log
+
+# ── Large data files — do NOT upload raw or processed CSVs to version control
+data/raw/
+data/processed/
+
+# ── Secrets and API credentials — NEVER commit ──────────────────────────────
+.env
+*.key
+secrets.toml
+config_secrets.json
+*_credentials.json
+*.pem
+*.p12
+
+# ── Scratch / temporary scripts ─────────────────────────────────────────────
+verify_app.py
+
+# ── OS-specific ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / editor folders ────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo

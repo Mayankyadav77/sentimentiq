@@ -1,0 +1,396 @@
+{
+  "platform": "SentimentIQ \u2013 Customer Review Intelligence Platform",
+  "champion_model_name": "Linear SVM",
+  "classes": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "training_samples": 15847,
+  "validation_samples": 3396,
+  "test_samples": 3396,
+  "vocabulary_size": 10000,
+  "elapsed_seconds": 33.71,
+  "validation_benchmark": {
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.8319,
+      "macro_precision": 0.6691,
+      "macro_recall": 0.5554,
+      "macro_f1": 0.5931,
+      "weighted_precision": 0.8027,
+      "weighted_recall": 0.8319,
+      "weighted_f1": 0.8088,
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "per_class": {
+        "Negative": {
+          "precision": 0.6384,
+          "recall": 0.4017,
+          "f1": 0.4931,
+          "support": 356
+        },
+        "Neutral": {
+          "precision": 0.4939,
+          "recall": 0.2861,
+          "f1": 0.3623,
+          "support": 423
+        },
+        "Positive": {
+          "precision": 0.875,
+          "recall": 0.9786,
+          "f1": 0.9239,
+          "support": 2617
+        }
+      },
+      "confusion_matrix": [
+        [
+          143,
+          85,
+          128
+        ],
+        [
+          64,
+          121,
+          238
+        ],
+        [
+          17,
+          39,
+          2561
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          0.4017,
+          0.2388,
+          0.3596
+        ],
+        [
+          0.1513,
+          0.2861,
+          0.5626
+        ],
+        [
+          0.0065,
+          0.0149,
+          0.9786
+        ]
+      ],
+      "total_samples": 3396,
+      "best_params": {
+        "alpha": 0.1
+      },
+      "cv_score": 0.5762
+    },
+    "Logistic Regression": {
+      "accuracy": 0.7915,
+      "macro_precision": 0.6039,
+      "macro_recall": 0.6714,
+      "macro_f1": 0.6284,
+      "weighted_precision": 0.8402,
+      "weighted_recall": 0.7915,
+      "weighted_f1": 0.8105,
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "per_class": {
+        "Negative": {
+          "precision": 0.4968,
+          "recall": 0.6629,
+          "f1": 0.568,
+          "support": 356
+        },
+        "Neutral": {
+          "precision": 0.3483,
+          "recall": 0.4941,
+          "f1": 0.4086,
+          "support": 423
+        },
+        "Positive": {
+          "precision": 0.9664,
+          "recall": 0.8571,
+          "f1": 0.9085,
+          "support": 2617
+        }
+      },
+      "confusion_matrix": [
+        [
+          236,
+          109,
+          11
+        ],
+        [
+          147,
+          209,
+          67
+        ],
+        [
+          92,
+          282,
+          2243
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          0.6629,
+          0.3062,
+          0.0309
+        ],
+        [
+          0.3475,
+          0.4941,
+          0.1584
+        ],
+        [
+          0.0352,
+          0.1078,
+          0.8571
+        ]
+      ],
+      "total_samples": 3396,
+      "best_params": {
+        "C": 0.1
+      },
+      "cv_score": 0.6363
+    },
+    "Linear SVM": {
+      "accuracy": 0.8422,
+      "macro_precision": 0.6517,
+      "macro_recall": 0.6565,
+      "macro_f1": 0.6531,
+      "weighted_precision": 0.8402,
+      "weighted_recall": 0.8422,
+      "weighted_f1": 0.8408,
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "per_class": {
+        "Negative": {
+          "precision": 0.557,
+          "recall": 0.618,
+          "f1": 0.5859,
+          "support": 356
+        },
+        "Neutral": {
+          "precision": 0.4577,
+          "recall": 0.409,
+          "f1": 0.432,
+          "support": 423
+        },
+        "Positive": {
+          "precision": 0.9405,
+          "recall": 0.9427,
+          "f1": 0.9416,
+          "support": 2617
+        }
+      },
+      "confusion_matrix": [
+        [
+          220,
+          101,
+          35
+        ],
+        [
+          129,
+          173,
+          121
+        ],
+        [
+          46,
+          104,
+          2467
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          0.618,
+          0.2837,
+          0.0983
+        ],
+        [
+          0.305,
+          0.409,
+          0.2861
+        ],
+        [
+          0.0176,
+          0.0397,
+          0.9427
+        ]
+      ],
+      "total_samples": 3396,
+      "best_params": {
+        "C": 0.1
+      },
+      "cv_score": 0.6369
+    }
+  },
+  "test_evaluation_champion": {
+    "accuracy": 0.8324,
+    "macro_precision": 0.6387,
+    "macro_recall": 0.6354,
+    "macro_f1": 0.6363,
+    "weighted_precision": 0.8268,
+    "weighted_recall": 0.8324,
+    "weighted_f1": 0.8293,
+    "labels": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ],
+    "per_class": {
+      "Negative": {
+        "precision": 0.5627,
+        "recall": 0.5944,
+        "f1": 0.5781,
+        "support": 355
+      },
+      "Neutral": {
+        "precision": 0.4259,
+        "recall": 0.3726,
+        "f1": 0.3975,
+        "support": 424
+      },
+      "Positive": {
+        "precision": 0.9275,
+        "recall": 0.9392,
+        "f1": 0.9334,
+        "support": 2617
+      }
+    },
+    "confusion_matrix": [
+      [
+        211,
+        101,
+        43
+      ],
+      [
+        117,
+        158,
+        149
+      ],
+      [
+        47,
+        112,
+        2458
+      ]
+    ],
+    "confusion_matrix_normalized": [
+      [
+        0.5944,
+        0.2845,
+        0.1211
+      ],
+      [
+        0.2759,
+        0.3726,
+        0.3514
+      ],
+      [
+        0.018,
+        0.0428,
+        0.9392
+      ]
+    ],
+    "total_samples": 3396
+  },
+  "error_analysis_samples": [
+    {
+      "index": 8,
+      "review_text": "I love the designs of tiny blouses. but i wish they could make them more durable. i have owned several blouses in the past where i have to use a little pin to secure the button line from pulling at the breast area, or that after a few delicate washings have come apart at a seam. and ironing or steaming them is a must. this blouse was no exception. it went back because of pulling at the bust. i'm willing to take some extra care of my clothing out of my busy schedule, but i shouldn't have to! 5'7\"",
+      "actual_sentiment": "Neutral",
+      "predicted_sentiment": "Positive",
+      "rating": 3,
+      "department": "Tops"
+    },
+    {
+      "index": 16,
+      "review_text": "This is a beautiful tunic. the colors are vibrant and the stitching is high quality. please note that the insets on the sides are not actual stitching but a print. it is still very pretty. please size down a size. i am usually a large, wearing a 12 or 14 if something runs tight across the bust, i ordered a large and it is a bit big under the arms but too big through the waist area. i am not small in this area either.i would recommend buying this tunic.",
+      "actual_sentiment": "Positive",
+      "predicted_sentiment": "Neutral",
+      "rating": 4,
+      "department": "Tops"
+    },
+    {
+      "index": 23,
+      "review_text": "The material is soft and the pattern is pretty, but it fits like a sack. it's too bad that this wasn't more form-fitting, with some stretch and a zipper, because its fit is just not beautiful. for tall, very slender ladies, this will be pretty, as it is in the photo. it fit me just fine (with a little extra room on top), but it went right back into the bag without a thought.",
+      "actual_sentiment": "Neutral",
+      "predicted_sentiment": "Positive",
+      "rating": 3,
+      "department": "Dresses"
+    },
+    {
+      "index": 26,
+      "review_text": "I ordered the light pink version in size xl. the details of the top and the shade of pink are pretty. but, the shirt fits me much shorter than on the model. i'm not quite 5 ft. 6 inches so it should have worked. the material is thin so i was able to stretch it out to give more length. it does look stretched-out now though. i washed it and it shrank a bit so i stretched it again. this is a top that i kept to wear under vests. the pretty colors and the softness of the material make it worth keepin",
+      "actual_sentiment": "Neutral",
+      "predicted_sentiment": "Positive",
+      "rating": 3,
+      "department": "Tops"
+    },
+    {
+      "index": 37,
+      "review_text": "I love how different this dress is in terms of the design. it catches light beautifully. the short, biased hem makes the dress fun and flirty. but, this dress is completely sheer. there is no lining which is very disappointing. i do have a short, nude slip that makes this dress work for me. you will need a slip, for sure! unless you are rhianna. the sizing runs a little large, i probably could size down given the loose cut but overall the proportions are flattering showing off my legs. i will re",
+      "actual_sentiment": "Neutral",
+      "predicted_sentiment": "Positive",
+      "rating": 3,
+      "department": "Dresses"
+    },
+    {
+      "index": 39,
+      "review_text": "This sweater is a pretty color and style and is really soft and comfortable - i really wanted it to work. a small fit my 5'7\", 140 lb frame well (32dd) but the ruffles on the hips were not a wanted addition unfortunately. . tried it on three separate times to try to change my mind but in the end, it's going back. i would not suggest it if you have an athletic or hourglass figure with even a little hip.",
+      "actual_sentiment": "Positive",
+      "predicted_sentiment": "Neutral",
+      "rating": 4,
+      "department": "Tops"
+    },
+    {
+      "index": 48,
+      "review_text": "I bought the bronze color which was nice but the cut just hung like a dust rag, no fit , no drape\nvery unfinished looking. though i bought it on sale on sale, it is not worth keeping. over all it was not a worthwhile blouse to keep.",
+      "actual_sentiment": "Negative",
+      "predicted_sentiment": "Neutral",
+      "rating": 1,
+      "department": "Tops"
+    },
+    {
+      "index": 53,
+      "review_text": "I'm a 36ddd and although that's pretty large, i don't generally have trouble fitting into most retailer clothing. (the tracy reese amoret dress, for example, fits just fine in my regular size.) so, i ordered this dress in my regular size. well, i tried it on, and the right and left sides of the front closure on top were literally about 10 inches apart. there was *no way* this would fit, even if i went up 3 sizes. it's crazy!\nthis is a terrible shame because it's really a lovely dress and it fits j",
+      "actual_sentiment": "Positive",
+      "predicted_sentiment": "Negative",
+      "rating": 4,
+      "department": "Dresses"
+    },
+    {
+      "index": 65,
+      "review_text": "Love the design!! it's screams retailer and is form fitting, flattering, and super cute!! however the material has the itch factor for me. it's not lined and therefore quite scratchy along the collar as well. what a shame.",
+      "actual_sentiment": "Positive",
+      "predicted_sentiment": "Neutral",
+      "rating": 4,
+      "department": "Tops"
+    },
+    {
+      "index": 72,
+      "review_text": "A good sweater but something about it was just not right for me. just didn't feel like i would wear it.",
+      "actual_sentiment": "Positive",
+      "predicted_sentiment": "Neutral",
+      "rating": 4,
+      "department": "Tops"
+    }
+  ],
+  "feature_parameters": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 10000,
+    "min_df": 2,
+    "max_df": 0.9,
+    "sublinear_tf": true
+  }
+}
